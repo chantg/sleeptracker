@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+		<ion-back-button (click)="back()"></ion-back-button>
+	</ion-buttons>
+    <ion-title>Sleepiness Logger</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+	<ion-radio-group>
+		<ion-list-header>
+			Sleepiness Scale
+		</ion-list-header>
+		<ion-item>
+			<ion-label>1 - Wide Awake</ion-label>
+			<ion-radio (ionSelect) = "select(1)" value="one"></ion-radio>
+
+		</ion-item>  
+		<ion-item>
+			<ion-label>2 - Functioning but not at Peak</ion-label>
+			<ion-radio (ionSelect) = "select(2)" value="two"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>3 - Responsive but not fully alert</ion-label>
+			<ion-radio (ionSelect) = "select(3)" value="three"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>4 - Somewhat Foggy</ion-label>
+			<ion-radio (ionSelect) = "select(4)" value="four"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>5 - Foggy</ion-label>
+			<ion-radio (ionSelect) = "select(5)" value="five"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>6 - Sleepy</ion-label>
+			<ion-radio (ionSelect) = "select(6)" value="six"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>7 - Sleepy Onset Soon</ion-label>
+			<ion-radio (ionSelect) = "select(7)" value="seven"></ion-radio>
+		</ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+	<ion-button (click) = "submit ()">
+		<ion-icon name = "arrow-forward"></ion-icon>
+		Submit
+	</ion-button>
+</ion-content>

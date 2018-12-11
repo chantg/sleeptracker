@@ -1,0 +1,23 @@
+/*
+Alternative I found for scroll https://forum.ionicframework.com/t/ionic-4-what-is-alternative-to-deprecated-ion-scroll/140851
+*/
+div[scrollx=true], div[scrolly=true] {
+  position: relative;
+  overflow: hidden;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+div[scrollx=true] {
+  overflow-x: auto;
+}
+
+div[scrolly=true] {
+  overflow-y: auto;
+}
+
+#zone{
+    height: 200px;
+}

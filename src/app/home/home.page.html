@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Sleep Logger
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-item>
+		<ion-button color = "medium" (click) = "goToLogSleep()">
+			<ion-icon name = "moon"></ion-icon>
+			Log Sleep
+		</ion-button>
+	</ion-item>
+	<ion-item>
+	
+		<ion-button color = "warning"(click) = "goToLogSleepy()">
+			<ion-icon name = "eye"></ion-icon>
+			Log Sleepiness 
+		</ion-button>
+	</ion-item>
+	<ion-item>
+		<ion-button (click) = "goToView()">
+			<ion-icon name = "analytics"></ion-icon>
+			View Logged Data
+		</ion-button>
+	</ion-item>
+</ion-content>

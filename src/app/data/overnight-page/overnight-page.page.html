@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+	<ion-buttons slot="start">
+		<ion-back-button (click)="back()"></ion-back-button>
+	</ion-buttons>
+    <ion-title>Log Sleep</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-item>
+		<ion-label>Sleep Start Time</ion-label>
+		<ion-datetime displayFormat="MMM DD, YYYY hh:mm A" [(ngModel)]="start"></ion-datetime>
+	</ion-item>
+	
+	<ion-item>
+		<ion-label>Wake Time</ion-label>
+		<ion-datetime displayFormat="MMM DD, YYYY hh:mm A" [(ngModel)]="wake"></ion-datetime>
+	</ion-item>
+	
+	<ion-button (click) = "submit ()">
+		<ion-icon name = "arrow-forward"></ion-icon>
+		Submit
+	</ion-button>
+</ion-content>
